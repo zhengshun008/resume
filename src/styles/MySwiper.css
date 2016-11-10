@@ -91,6 +91,8 @@ em {
     align-items: center;
 }
 
+
+//第一个划窗
 .slide1{
     width: 100%;
     height: 100%;
@@ -114,7 +116,7 @@ em {
   height: 200px;
   margin-top: 40px;
 }
-
+//第二个划窗
 .slide2{
   height: 100%;
   display: block;
@@ -124,9 +126,8 @@ em {
 .slide2 div:nth-child(1){
   width: 30%;
   height: 30%;
-
   position: absolute;
-  left: 0px;
+  left: 10px;
   top: 0px;
 
 }
@@ -136,21 +137,115 @@ em {
   height: 100%;
 }
 
+
 .slide2 div:nth-child(2){
   width: 75%;
   height: 45%;
   border: 2px solid #01b2ff;
   border-radius: 50%;
   position: absolute;
-  top: 25%;
+  top: 23%;
   left:40px;
+  padding: 10px
 }
 
+.slide2 div:nth-child(2)>ul{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #01b2ff;
+  padding: 0 20px;
+}
 
+.slide2 div:nth-child(2)>ul>li:nth-child(1){
+  width: 100%;
+  height: 40%;
+  border-bottom: 2px solid #999;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 130px;
+
+}
+
+.slide2 div:nth-child(2)>ul>li:nth-child(2){
+  width: 100%;
+  height: 25%;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+
+}
+
+.slide2 div:nth-child(2)>ul>li:nth-child(3),
+.slide2 div:nth-child(2)>ul>li:nth-child(4){
+  width: 100%;
+  height: 13%;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+
+//辅助介绍
 .slide2 div:nth-child(3){
-  width: 50%;
+  width: 65%;
+  height: 35%;
   position: absolute;
   bottom: 0px;
   right: 0px;
+  background: #01b2ff;
+  border-radius: 80% 0 0 0;
+  color: #fff;
 }
+
+.slide2 div:nth-child(3) ul{
+  width: 70%;
+  display: block;
+  float: right;
+  margin-top: 45px;
+}
+
+.slide2 div:nth-child(3) ul li{
+  text-align: left;
+}
+
+
+//体验链接页面
+.slide3{
+    width: 100%;
+    height: 100%;
+    background: #00a2ff;
+    padding: 20px;
+}
+
+.slide3 div{
+  width: 50%;
+  height: 60px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  margin-left: -25%;
+  text-align: center;
+  line-height: 60px;
+}
+
+.slide3 button{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  margin-left: -75px;
+  border-radius: 100px;
+}
+
+.slide3 button:hovor{
+  box-shadow: 0px 0px 5px block;
+}
+
+
+
 
