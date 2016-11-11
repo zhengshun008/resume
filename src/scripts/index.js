@@ -33,7 +33,7 @@ $("#btn").tap(function(){
 	$("#Swiper").hide();
 
 	$.post("/api/skill", {}, function(response){
-    console.log(response);
+    // console.log(response);
   });
 
 	var myScroll;

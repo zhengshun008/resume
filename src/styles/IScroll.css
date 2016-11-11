@@ -122,14 +122,14 @@ body {
 }
 
 #scroller>ul>#jineng>li {
-	display: none;
+	/*display: none;*/
 	padding: 0 10px;
 	border-bottom: 1px solid #ccc;
 	border-top: 1px solid #fff;
 	background-color: #fafafa;
 	font-size: 14px;
 }
-
+/*我的技能*/
 #scroller>ul>#jineng>li h2{
 	margin-top: 10px;
 	padding: 10px;
@@ -167,7 +167,7 @@ body {
 	line-height: 30px;
 }
 
-//我的经历
+/*我的经历*/
 
 #jingli>li{
 	width: 100%;
