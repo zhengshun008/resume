@@ -2,7 +2,7 @@ var Swiper=require("./components/swiper/swiper-3.3.1.min");
 
 var SwiperAnimate=require("./components/swiper/swiper.animate1.0.2.min");
 
-var MySwiper=new Swiper ('.swiper-container', {
+var MySwiper1=new Swiper ('.swiper-1', {
   onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
     SwiperAnimate.swiperAnimateCache(swiper); //隐藏动画元素 
     SwiperAnimate.swiperAnimate(swiper); //初始化完成开始动画
@@ -32,15 +32,52 @@ $("#btn").tap(function(){
 	$("#MyIsCroll").show();
 	$("#Swiper").hide();
 
-	$.post("/api/skill", {}, function(response){
+  var MySwiper2=new Swiper ('.swiper-2', {
+  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+    SwiperAnimate.swiperAnimateCache(swiper); //隐藏动画元素 
+    SwiperAnimate.swiperAnimate(swiper); //初始化完成开始动画
+  }, 
+  onSlideChangeEnd: function(swiper){ 
+    SwiperAnimate.swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+  } 
+});
+
+  $.post("/api/skill", {}, function(response){
     // console.log(response);
   });
 
-	var myScroll;
-	
-	myScroll = new IScroll('#wrapper', { mouseWheel: true });
-	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+  var myScroll;
+
+  myScroll = new IScroll('#wrapper', { mouseWheel: true });
+  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var wx=require("./components/weixin/jweixin");
 
@@ -74,14 +111,14 @@ $("#scan").tap(function(){
 
   wx.ready(function () {
        // 微信扫一扫的接口
-      wx.scanQRCode({
+       wx.scanQRCode({
         needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
         scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
         success: function (res) {
           var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
         }
       });
-    });
+     });
 })
 
 

@@ -3317,6 +3317,7 @@ body {
   z-index: 1;
   -webkit-tap-highlight-color: transparent;
   width: 100%;
+  height: 100%;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -3382,6 +3383,9 @@ body {
   line-height: 30px; }
 
 /*我的经历*/
+#jingli {
+  /*display: none;*/ }
+
 #jingli > li {
   width: 100%;
   height: 100%;
@@ -3389,12 +3393,12 @@ body {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #fff;
   background-color: #fafafa;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 0px; }
 
 #jingli > li > .swiper-container {
   width: 100%;
-  height: 475px;
-  /*position: absolute;*/ }
+  height: 475px; }
 
 .slide4 > div {
   position: absolute; }
@@ -3441,6 +3445,67 @@ body {
 
 .slide4 > div:nth-child(7) {
   top: 70%; }
+
+#xiangmu {
+  /*display: block;*/
+  width: 100%; }
+
+#xiangmu li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff; }
+
+#xiangmu li h2 {
+  padding: 20px; }
+
+.dv2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; }
+
+.dv2 li {
+  border-bottom: 2px solid #999;
+  padding-bottom: 15px;
+  margin-bottom: 30px; }
+
+.dv2 div:nth-child(1) {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.dv2 div:nth-child(1) span:nth-child(1) {
+  flex: 2;
+  font-size: 16px;
+  font-weight: bold; }
+
+.dv2 div:nth-child(1) span:nth-child(2) {
+  flex: 5;
+  font-size: 16px; }
+
+.dv2 div:nth-child(3) {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.dv2 div:nth-child(3) span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10 0px; }
+
+.dv2 div:nth-child(3) span:nth-child(2) {
+  text-indent: 2em; }
+
+/*我的*/
+#me {
+  display: none; }
 
 @font-face {
   font-family: "iconfont";
